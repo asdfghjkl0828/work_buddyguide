@@ -11,9 +11,19 @@ withDefaults(
 
 <template>
   <figure class="wb-group-qr" :class="{ 'is-screen-menu': screenMenu }">
+    <div class="wb-group-qr__frame">
+      <img
+        src="/contact/wechat-owner.jpg"
+        width="396"
+        height="396"
+        alt="站长微信二维码"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
     <figcaption>
-      <span>WECHAT GROUP</span>
-      微信扫码加入交流群
+      <span>WECHAT</span>
+      微信扫码联系站长
     </figcaption>
   </figure>
 </template>
@@ -25,12 +35,38 @@ withDefaults(
   color: var(--wb-ink);
 }
 
+.wb-group-qr__frame {
+  position: relative;
+  padding: 8px;
+  border: 2px solid var(--wb-ink);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 5px 5px 0 var(--wb-acid);
+}
+
+.wb-group-qr__frame::before {
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgb(18 20 15 / 14%);
+  border-radius: 4px;
+  content: "";
+  pointer-events: none;
+}
+
+.wb-group-qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 4px;
+}
+
 .wb-group-qr figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 0;
+  margin-top: 13px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -50,7 +86,22 @@ withDefaults(
   padding: 8px 4px 12px;
 }
 
+.wb-group-qr.is-screen-menu .wb-group-qr__frame {
+  box-shadow: 4px 4px 0 var(--wb-acid);
+}
+
 .wb-group-qr.is-screen-menu figcaption {
   white-space: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wb-group-qr__frame {
+    border-color: var(--vp-c-brand-2);
+    box-shadow: 5px 5px 0 var(--vp-c-brand-2);
+  }
+
+  .wb-group-qr.is-screen-menu .wb-group-qr__frame {
+    box-shadow: 4px 4px 0 var(--vp-c-brand-2);
+  }
 }
 </style>

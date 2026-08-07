@@ -1374,3 +1374,11 @@ body.wb-lightbox-open {
   line-height: 1;
   vertical-align: top;
 }
+
+/* navbar logo 放大 */
+.VPNavBarTitle .VPImage.logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+

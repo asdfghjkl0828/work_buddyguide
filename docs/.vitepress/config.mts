@@ -8,8 +8,8 @@ const siteUrl = process.env.VITEPRESS_SITE_URL || "https://workbuddy.homes";
 
 export default defineConfig({
     lang: "zh-CN",
-    title: "WorkBuddy 实战蓝皮书",
-    titleTemplate: ":title · WorkBuddy 实战蓝皮书",
+    title: "WorkBuddy × zlsk",
+    titleTemplate: ":title · WorkBuddy × zlsk",
     description: "从安装使用到 AI 工作系统：27 章 WorkBuddy 实战指南与团队落地方法。",
     cleanUrls: true,
     lastUpdated: true,
@@ -58,7 +58,8 @@ export default defineConfig({
       },
     },
     themeConfig: {
-      siteTitle: "WorkBuddy Guide",
+      siteTitle: "WorkBuddy × zlsk",
+      logo: "/contact/logo-zlsk.png",
       nav: [
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },
@@ -66,7 +67,7 @@ export default defineConfig({
         { text: "帮你解决", link: "/help/" },
         { text: "阅读指南", link: "/reading-guide" },
         {
-          text: "交流群",
+          text: "联系站长",
           items: [{ component: "GroupQrMenu" }],
         },
       ],
@@ -90,7 +91,7 @@ export default defineConfig({
         },
       },
       footer: {
-        message: "以真实任务为主线的 WorkBuddy 社区实战读本",
+        message: "以真实任务为主线的 WorkBuddy 实战读本 · 中联数科",
       },
     },
   });
