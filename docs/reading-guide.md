@@ -5,6 +5,8 @@ description: WorkBuddy 中文学习指南与阅读路线，从下载安装、第
 breadcrumbTitle: 阅读指南
 ---
 
+<div class="wb-page-logo"><img src="/contact/logo-zlsk.png" alt="ZLSK" /></div>
+
 # WorkBuddy 阅读与学习指南：从入门到团队落地
 
 这是一条面向新手、任务实践者和团队负责人的 WorkBuddy 学习路线。你不必从头背功能：先找到当前最接近的工作问题，完成一项真实任务，再沿着使用手册、实战案例、进阶系统和团队落地逐步深入。

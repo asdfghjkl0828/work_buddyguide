@@ -7,6 +7,8 @@ outline: false
 pageClass: community-cases-page
 ---
 
+<div class="wb-page-logo"><img src="/contact/logo-zlsk.png" alt="ZLSK" /></div>
+
 # WorkBuddy 社区案例集
 
 这里收录由 WorkBuddy 用户提交的真实实践。每个案例都会说明它解决了什么场景、使用了哪些 Skills、在 WorkBuddy 中怎样执行，以及最终交付了什么结果。

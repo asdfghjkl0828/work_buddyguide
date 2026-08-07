@@ -744,8 +744,15 @@ button {
   content: "";
 }
 
-.VPDoc .content-container {
-  max-width: 800px !important;
+.wb-page-logo {
+  margin: -40px 0 12px;
+}
+.wb-page-logo img {
+  width: 80px;
+  height: 80px;
+  background: #4488ee;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .wb-contact-grid {
