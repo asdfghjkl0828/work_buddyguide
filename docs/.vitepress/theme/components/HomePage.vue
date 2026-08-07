@@ -9,7 +9,6 @@ import PixelIconSprite from "./PixelIconSprite.vue";
     <section class="wb-hero" aria-labelledby="wb-hero-title">
       <div class="wb-hero__stage">
         <div class="wb-hero__copy">
-          <img class="wb-hero__brand" src="/contact/logo-zlsk.png" alt="中联数科" />
           <p class="wb-pixel-label">OPEN-SOURCE · 27 CHAPTERS · 2026</p>
           <h1 id="wb-hero-title" class="wb-hero__title--bluebook">WorkBuddy蓝皮书</h1>
           <p class="wb-hero__summary">
