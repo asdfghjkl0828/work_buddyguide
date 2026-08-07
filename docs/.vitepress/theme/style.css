@@ -245,13 +245,17 @@ button {
 }
 
 .wb-hero__brand {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   margin-bottom: 18px;
   background: #d8f238;
-  padding: 14px;
-  border-radius: 16px;
-  box-shadow: 0 0 0 4px #d8f238;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 0 0 6px #d8f238;
+}
+
+.wb-hero__brand img {
+  mix-blend-mode: multiply;
 }
 
 .wb-hero__actions {
@@ -1385,13 +1389,14 @@ body.wb-lightbox-open {
   vertical-align: top;
 }
 
-/* navbar logo 放大 */
+/* navbar logo 放大 + 去白底 */
 .VPNavBarTitle .VPImage.logo {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 0;
+  mix-blend-mode: multiply;
 }
 .VPNavBar {
-  --vp-nav-height: 100px;
+  --vp-nav-height: 150px;
 }
 
