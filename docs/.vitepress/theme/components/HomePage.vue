@@ -108,7 +108,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="/bluebook/第四篇%20岗位与行业落地/">
+        <a class="wb-reading-card" href="/bluebook/%E7%AC%AC%E5%9B%9B%E7%AF%87%20%E5%B2%97%E4%BD%8D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E8%90%BD%E5%9C%B0/">
           <span class="wb-reading-card__icon"><PixelIcon name="users" /></span>
           <span class="wb-reading-card__content">
             <small>PART 04 · CH. 26—27</small>
