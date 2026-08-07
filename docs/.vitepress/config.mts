@@ -30,7 +30,7 @@ export default defineConfig({
     transformHead: (context) => createSeoHead(siteUrl, context),
     head: [
       ["link", { rel: "icon", type: "image/png", href: "/favicon-zlsk.png?v=2" }],
-      ["meta", { name: "theme-color", content: "#d8f238" }],
+      ["meta", { name: "theme-color", content: "#4488ee" }],
       [
         "meta",
         {
