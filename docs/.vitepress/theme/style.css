@@ -1389,11 +1389,12 @@ body.wb-lightbox-open {
   vertical-align: top;
 }
 
-/* navbar logo 放大 + 去白底 */
+/* navbar logo 顶满 + 去白底 */
 .VPNavBarTitle .VPImage.logo {
-  height: 36px;
-  width: 36px;
+  height: 56px;
+  width: 56px;
   border-radius: 0;
   mix-blend-mode: multiply;
+  margin-top: 4px;
 }
 
