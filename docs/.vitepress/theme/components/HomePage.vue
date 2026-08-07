@@ -75,7 +75,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-reading-grid">
-        <a class="wb-reading-card" href="/bluebook/第一篇%20使用手册：先把%20WorkBuddy%20用起来/">
+        <a class="wb-reading-card" href="/bluebook/第一篇 使用手册：先把 WorkBuddy 用起来/">
           <span class="wb-reading-card__icon"><PixelIcon name="user" /></span>
           <span class="wb-reading-card__content">
             <small>PART 01 · CH. 01—10</small>
@@ -86,7 +86,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/">
+        <a class="wb-reading-card" href="/bluebook/第二篇 案例篇：从一项任务到一支 AI 团队/">
           <span class="wb-reading-card__icon"><PixelIcon name="briefcase" /></span>
           <span class="wb-reading-card__content">
             <small>PART 02 · CH. 11—21</small>
