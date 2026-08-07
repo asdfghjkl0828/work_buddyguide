@@ -1,7 +1,7 @@
 :root {
-  --wb-acid: #d8f238;
-  --wb-acid-strong: #b9e52f;
-  --wb-acid-soft: #eef7bd;
+  --wb-acid: #4488ee;
+  --wb-acid-strong: #3370dd;
+  --wb-acid-soft: #d8e6ff;
   --wb-ink: #11130e;
   --wb-paper: #f5f7f0;
   --wb-surface: #ffffff;
@@ -1395,9 +1395,19 @@ body.wb-lightbox-open {
   width: 64px !important;
   border-radius: 0 !important;
   mix-blend-mode: multiply;
+  position: relative !important;
+  z-index: 10 !important;
 }
 .dark .VPNavBarTitle .VPImage.logo,
 html.dark .VPNavBarTitle .VPImage.logo {
   mix-blend-mode: screen;
+}
+.dark .VPNavBarTitle .VPImage.logo,
+html.dark .VPNavBarTitle .VPImage.logo {
+  mix-blend-mode: screen;
+}
+.VPNavBarTitle .vp-icon,
+.VPNavBarTitle svg:not(.logo) {
+  display: none !important;
 }
 
