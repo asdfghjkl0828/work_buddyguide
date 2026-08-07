@@ -1391,8 +1391,8 @@ body.wb-lightbox-open {
 
 /* navbar logo 放大 + 去白底 */
 .VPNavBarTitle .VPImage.logo {
-  height: 64px;
-  width: 64px;
+  height: 36px;
+  width: 36px;
   border-radius: 0;
   mix-blend-mode: multiply;
 }
