@@ -67,7 +67,7 @@ export default defineConfig({
         { text: "帮你解决", link: "/help/" },
         { text: "阅读指南", link: "/reading-guide" },
         {
-          text: "联系站长",
+          text: "联系我们",
           items: [{ component: "GroupQrMenu" }],
         },
       ],
