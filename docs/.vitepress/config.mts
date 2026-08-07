@@ -8,8 +8,8 @@ const siteUrl = process.env.VITEPRESS_SITE_URL || "https://workbuddy.homes";
 
 export default defineConfig({
     lang: "zh-CN",
-    title: "WorkBuddy × zlsk",
-    titleTemplate: ":title · WorkBuddy × zlsk",
+    title: "WorkBuddy × ZLSK",
+    titleTemplate: ":title · WorkBuddy × ZLSK",
     description: "从安装使用到 AI 工作系统：27 章 WorkBuddy 实战指南与团队落地方法。",
     cleanUrls: true,
     lastUpdated: true,
@@ -58,8 +58,8 @@ export default defineConfig({
       },
     },
     themeConfig: {
-      siteTitle: "WorkBuddy × zlsk",
-      logo: "/contact/logo-zlsk.png",
+      siteTitle: "WorkBuddy × ZLSK",
+      logo: "/contact/logo-ZLSK.png",
       nav: [
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },

@@ -3,9 +3,9 @@ import { resolve } from "node:path";
 
 import type { HeadConfig, PageData, TransformContext } from "vitepress";
 
-const SITE_NAME = "WorkBuddy × zlsk";
-const SITE_ALTERNATE_NAME = "WorkBuddy × zlsk 蓝皮书";
-const ORGANIZATION_NAME = "zlsk";
+const SITE_NAME = "WorkBuddy × ZLSK";
+const SITE_ALTERNATE_NAME = "WorkBuddy × ZLSK 蓝皮书";
+const ORGANIZATION_NAME = "ZLSK";
 const DEFAULT_DESCRIPTION =
   "从安装使用到 AI 工作系统：27 章 WorkBuddy 实战指南与团队落地方法。";
 
