@@ -31,14 +31,14 @@
   --vp-sidebar-bg-color: #f0f3eb;
   --vp-code-block-bg: #161913;
   --vp-code-block-color: #f4f7ef;
-  --vp-code-lang-color: #d8f238;
+  --vp-code-lang-color: #4488ee;
   --vp-code-line-highlight-color: rgba(216, 242, 56, 0.12);
   --vp-custom-block-tip-bg: #eff7c9;
   --vp-custom-block-tip-border: #355e18;
 }
 
 .dark {
-  --wb-acid: #d8f238;
+  --wb-acid: #4488ee;
   --wb-acid-strong: #c5e934;
   --wb-acid-soft: #2b3218;
   --wb-ink: #f3f5ed;
@@ -46,9 +46,9 @@
   --wb-surface: #181b15;
   --wb-muted: #aeb4a7;
   --wb-line: #343a2f;
-  --wb-shadow: 4px 4px 0 #d8f238;
+  --wb-shadow: 4px 4px 0 #4488ee;
 
-  --vp-c-brand-1: #d8f238;
+  --vp-c-brand-1: #4488ee;
   --vp-c-brand-2: #c5e934;
   --vp-c-brand-3: #e5f878;
   --vp-c-brand-soft: rgba(216, 242, 56, 0.14);
@@ -65,9 +65,9 @@
   --vp-sidebar-bg-color: #141712;
   --vp-code-block-bg: #090a08;
   --vp-code-block-color: #f7f9f2;
-  --vp-code-lang-color: #d8f238;
+  --vp-code-lang-color: #4488ee;
   --vp-custom-block-tip-bg: #242b16;
-  --vp-custom-block-tip-border: #d8f238;
+  --vp-custom-block-tip-border: #4488ee;
 }
 
 *,
@@ -248,10 +248,10 @@ button {
   width: 140px;
   height: 140px;
   margin-bottom: 18px;
-  background: #d8f238;
+  background: #4488ee;
   padding: 18px;
   border-radius: 18px;
-  box-shadow: 0 0 0 6px #d8f238;
+  box-shadow: 0 0 0 6px #4488ee;
 }
 
 .wb-hero__brand img {
