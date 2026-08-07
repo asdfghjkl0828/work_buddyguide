@@ -15,11 +15,11 @@ import PixelIconSprite from "./PixelIconSprite.vue";
             WorkBuddy能干嘛？一套以真实工作为主线的WorkBuddy实践路径。带你从0到1先用起来，再从1到100把每次成功沉淀为可复用的工作系统，真正把AI变成生产力！
           </p>
           <div class="wb-hero__actions">
-            <a class="wb-button wb-button--primary" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/">
+            <a class="wb-button wb-button--primary" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/">
               <span>开始阅读</span>
               <PixelIcon name="arrow-right" />
             </a>
-            <a class="wb-button wb-button--outline" href="https://asdfghjkl0828.github.io/work_buddyguide/reading-guide">查看阅读路线</a>
+            <a class="wb-button wb-button--outline" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/reading-guide">查看阅读路线</a>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-reading-grid">
-        <a class="wb-reading-card" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%80%E7%AF%87%20%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%EF%BC%9A%E5%85%88%E6%8A%8A%20WorkBuddy%20%E7%94%A8%E8%B5%B7%E6%9D%A5/">
+        <a class="wb-reading-card" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%80%E7%AF%87%20%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%EF%BC%9A%E5%85%88%E6%8A%8A%20WorkBuddy%20%E7%94%A8%E8%B5%B7%E6%9D%A5/">
           <span class="wb-reading-card__icon"><PixelIcon name="user" /></span>
           <span class="wb-reading-card__content">
             <small>PART 01 · CH. 01—10</small>
@@ -86,7 +86,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/">
+        <a class="wb-reading-card" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/">
           <span class="wb-reading-card__icon"><PixelIcon name="briefcase" /></span>
           <span class="wb-reading-card__content">
             <small>PART 02 · CH. 11—21</small>
@@ -97,7 +97,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%89%E7%AF%87%20%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%9A%E6%8A%8A%E6%A1%88%E4%BE%8B%E5%8F%98%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+        <a class="wb-reading-card" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%89%E7%AF%87%20%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%9A%E6%8A%8A%E6%A1%88%E4%BE%8B%E5%8F%98%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
           <span class="wb-reading-card__icon"><PixelIcon name="sitemap" /></span>
           <span class="wb-reading-card__content">
             <small>PART 03 · CH. 22—25</small>
@@ -108,7 +108,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E5%9B%9B%E7%AF%87%20%E5%B2%97%E4%BD%8D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E8%90%BD%E5%9C%B0/">
+        <a class="wb-reading-card" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E5%9B%9B%E7%AF%87%20%E5%B2%97%E4%BD%8D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E8%90%BD%E5%9C%B0/">
           <span class="wb-reading-card__icon"><PixelIcon name="users" /></span>
           <span class="wb-reading-card__content">
             <small>PART 04 · CH. 26—27</small>
@@ -131,22 +131,22 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-task-grid">
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2011%20%E7%AB%A0%20%E5%8A%9E%E5%85%AC%E4%B8%89%E4%BB%B6%E5%A5%97%EF%BC%9AWord%E3%80%81Excel%E3%80%81PPT/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2011%20%E7%AB%A0%20%E5%8A%9E%E5%85%AC%E4%B8%89%E4%BB%B6%E5%A5%97%EF%BC%9AWord%E3%80%81Excel%E3%80%81PPT/">
           <PixelIcon name="briefcase" /><strong>办公文档</strong><span>Word · Excel · PPT</span>
         </a>
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2012%20%E7%AB%A0%20%E4%BB%8E%E6%95%B4%E7%90%86%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6%E8%BF%99%E4%BA%9B%E5%B0%8F%E4%BA%8B%E5%81%9A%E8%B5%B7/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2012%20%E7%AB%A0%20%E4%BB%8E%E6%95%B4%E7%90%86%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6%E8%BF%99%E4%BA%9B%E5%B0%8F%E4%BA%8B%E5%81%9A%E8%B5%B7/">
           <PixelIcon name="folder-open" /><strong>文件与远程</strong><span>整理 · 查找 · 执行</span>
         </a>
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2015%20%E7%AB%A0%20%E8%B5%84%E8%AE%AF%E6%95%B4%E5%90%88%EF%BC%9A%E6%8A%8A%E4%BF%A1%E6%81%AF%E6%B5%81%E5%8F%98%E6%88%90%E6%AF%8F%E6%97%A5%E9%80%9A%E7%9F%A5/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2015%20%E7%AB%A0%20%E8%B5%84%E8%AE%AF%E6%95%B4%E5%90%88%EF%BC%9A%E6%8A%8A%E4%BF%A1%E6%81%AF%E6%B5%81%E5%8F%98%E6%88%90%E6%AF%8F%E6%97%A5%E9%80%9A%E7%9F%A5/">
           <PixelIcon name="newspaper" /><strong>资讯与知识</strong><span>收集 · 筛选 · 复用</span>
         </a>
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2018%20%E7%AB%A0%20%E6%8A%8A%E6%8A%95%E8%B5%84%E5%88%86%E6%9E%90%E5%8F%98%E6%88%90%E4%BD%A0%E7%9A%84%E6%97%A5%E5%B8%B8/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2018%20%E7%AB%A0%20%E6%8A%8A%E6%8A%95%E8%B5%84%E5%88%86%E6%9E%90%E5%8F%98%E6%88%90%E4%BD%A0%E7%9A%84%E6%97%A5%E5%B8%B8/">
           <PixelIcon name="chart-line" /><strong>专业分析</strong><span>投资 · 研究 · 诊断</span>
         </a>
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2019%20%E7%AB%A0%20%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%8F%AC%E5%94%A4%20AI%20%E8%A7%86%E9%A2%91%E5%9B%A2%E9%98%9F/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2019%20%E7%AB%A0%20%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%8F%AC%E5%94%A4%20AI%20%E8%A7%86%E9%A2%91%E5%9B%A2%E9%98%9F/">
           <PixelIcon name="video-camera" /><strong>内容生产</strong><span>视频 · 自媒体 · GEO</span>
         </a>
-        <a href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%89%E7%AF%87%20%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%9A%E6%8A%8A%E6%A1%88%E4%BE%8B%E5%8F%98%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%AC%AC%2024%20%E7%AB%A0%20%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%A4%9A%20Agent%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">
+        <a onclick="window.location.href=this.href;return false" onclick="window.location.href=this.href;return false" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%89%E7%AF%87%20%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%9A%E6%8A%8A%E6%A1%88%E4%BE%8B%E5%8F%98%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%AC%AC%2024%20%E7%AB%A0%20%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%A4%9A%20Agent%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">
           <PixelIcon name="robot" /><strong>AI 工作系统</strong><span>Skill · Agent · 自动化</span>
         </a>
       </div>
