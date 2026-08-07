@@ -245,12 +245,12 @@ button {
 }
 
 .wb-hero__brand {
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 18px;
   background: #d8f238;
-  padding: 6px;
-  border-radius: 12px;
+  padding: 10px;
+  border-radius: 14px;
 }
 
 .wb-hero__actions {
@@ -1386,12 +1386,11 @@ body.wb-lightbox-open {
 
 /* navbar logo 放大 */
 .VPNavBarTitle .VPImage.logo {
-  height: 52px;
-  width: 52px;
+  height: 56px;
+  width: 56px;
   border-radius: 0;
 }
-.VPNavBarTitle {
-  height: auto !important;
-  padding: 4px 0;
+.VPNavBar {
+  --vp-nav-height: 72px;
 }
 

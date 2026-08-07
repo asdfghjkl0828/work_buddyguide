@@ -14,50 +14,36 @@ withDefaults(
     <div class="wb-group-qr__frame">
       <img
         src="/contact/wechat-owner.jpg"
-        width="396"
-        height="396"
         alt="站长微信二维码"
         loading="lazy"
-        decoding="async"
       />
     </div>
     <figcaption>
       <span>WECHAT</span>
-      微信扫码联系站长
+      微信扫码联系我们
     </figcaption>
   </figure>
 </template>
 
 <style scoped>
 .wb-group-qr {
-  width: 244px;
+  width: 300px;
   margin: 0;
   color: var(--wb-ink);
 }
 
 .wb-group-qr__frame {
-  position: relative;
-  padding: 8px;
+  padding: 6px;
   border: 2px solid var(--wb-ink);
   border-radius: 8px;
   background: #fff;
   box-shadow: 5px 5px 0 var(--wb-acid);
 }
 
-.wb-group-qr__frame::before {
-  position: absolute;
-  inset: 3px;
-  border: 1px solid rgb(18 20 15 / 14%);
-  border-radius: 4px;
-  content: "";
-  pointer-events: none;
-}
-
 .wb-group-qr img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1;
   border-radius: 4px;
 }
 
@@ -66,7 +52,7 @@ withDefaults(
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 13px;
+  margin-top: 10px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -82,7 +68,7 @@ withDefaults(
 }
 
 .wb-group-qr.is-screen-menu {
-  width: min(100%, 272px);
+  width: min(100%, 320px);
   padding: 8px 4px 12px;
 }
 
