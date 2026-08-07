@@ -17,7 +17,7 @@
   --vp-c-brand-1: #1a4488;
   --vp-c-brand-2: #2266cc;
   --vp-c-brand-3: #0d2a55;
-  --vp-c-brand-soft: rgba(216, 242, 56, 0.3);
+  --vp-c-brand-soft: rgba(68, 136, 238, 0.3);
   --vp-c-bg: var(--wb-paper);
   --vp-c-bg-alt: #edf0e8;
   --vp-c-bg-elv: var(--wb-surface);
@@ -32,7 +32,7 @@
   --vp-code-block-bg: #161913;
   --vp-code-block-color: #f4f7ef;
   --vp-code-lang-color: #4488ee;
-  --vp-code-line-highlight-color: rgba(216, 242, 56, 0.12);
+  --vp-code-line-highlight-color: rgba(68, 136, 238, 0.12);
   --vp-custom-block-tip-bg: #d8e6ff;
   --vp-custom-block-tip-border: #1a4488;
 }
@@ -40,7 +40,7 @@
 .dark {
   --wb-acid: #4488ee;
   --wb-acid-strong: #6699ff;
-  --wb-acid-soft: #2b3218;
+  --wb-acid-soft: #1d2a55;
   --wb-ink: #f3f5ed;
   --wb-paper: #10120e;
   --wb-surface: #181b15;
@@ -51,7 +51,7 @@
   --vp-c-brand-1: #4488ee;
   --vp-c-brand-2: #4488ee;
   --vp-c-brand-3: #aaccff;
-  --vp-c-brand-soft: rgba(216, 242, 56, 0.14);
+  --vp-c-brand-soft: rgba(68, 136, 238, 0.14);
   --vp-c-bg: var(--wb-paper);
   --vp-c-bg-alt: #151812;
   --vp-c-bg-elv: var(--wb-surface);
