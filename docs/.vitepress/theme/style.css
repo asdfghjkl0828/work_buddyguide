@@ -14,9 +14,9 @@
   --vp-font-family-base: var(--wb-body);
   --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
-  --vp-c-brand-1: #355e18;
-  --vp-c-brand-2: #477622;
-  --vp-c-brand-3: #23420f;
+  --vp-c-brand-1: #1a4488;
+  --vp-c-brand-2: #2266cc;
+  --vp-c-brand-3: #0d2a55;
   --vp-c-brand-soft: rgba(216, 242, 56, 0.3);
   --vp-c-bg: var(--wb-paper);
   --vp-c-bg-alt: #edf0e8;
@@ -33,8 +33,8 @@
   --vp-code-block-color: #f4f7ef;
   --vp-code-lang-color: #4488ee;
   --vp-code-line-highlight-color: rgba(216, 242, 56, 0.12);
-  --vp-custom-block-tip-bg: #eff7c9;
-  --vp-custom-block-tip-border: #355e18;
+  --vp-custom-block-tip-bg: #d8e6ff;
+  --vp-custom-block-tip-border: #1a4488;
 }
 
 .dark {
@@ -49,7 +49,7 @@
   --wb-shadow: 4px 4px 0 #4488ee;
 
   --vp-c-brand-1: #4488ee;
-  --vp-c-brand-2: #c5e934;
+  --vp-c-brand-2: #4488ee;
   --vp-c-brand-3: #e5f878;
   --vp-c-brand-soft: rgba(216, 242, 56, 0.14);
   --vp-c-bg: var(--wb-paper);
@@ -433,7 +433,7 @@ button {
 
 .wb-section__heading .wb-pixel-label {
   margin-bottom: 9px;
-  color: #557b18;
+  color: #2255aa;
 }
 
 .wb-section__heading h2,
@@ -502,7 +502,7 @@ button {
 
 .wb-reading-card__content small {
   margin-bottom: 8px;
-  color: #506d08;
+  color: #1d4d99;
   font-family: var(--wb-pixel);
   font-size: 10px;
 }
@@ -571,7 +571,7 @@ button {
 .wb-task-grid .hn {
   grid-row: 1 / 3;
   align-self: center;
-  color: #4f7213;
+  color: #1d4d99;
   font-size: 35px;
 }
 
@@ -820,7 +820,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  color: #6c8d13;
+  color: #3366cc;
   font-family: var(--wb-pixel);
   font-size: 10px;
   font-weight: 400;
