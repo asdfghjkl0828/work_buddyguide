@@ -1391,16 +1391,15 @@ body.wb-lightbox-open {
 
 /* navbar logo 顶满 */
 .VPNavBarTitle .VPImage.logo {
-  height: 64px;
-  width: 64px;
-  border-radius: 0;
-  margin-top: 0;
-  background: #d8f238;
-  padding: 6px;
+  height: 64px !important;
+  width: 64px !important;
+  border-radius: 0 !important;
+  background: #d8f238 !important;
+  padding: 6px !important;
+  object-fit: contain !important;
 }
-@media (prefers-color-scheme: dark) {
-  .VPNavBarTitle .VPImage.logo {
-    background: #d8f238;
-  }
+.dark .VPNavBarTitle .VPImage.logo,
+html.dark .VPNavBarTitle .VPImage.logo {
+  background: #d8f238 !important;
 }
 

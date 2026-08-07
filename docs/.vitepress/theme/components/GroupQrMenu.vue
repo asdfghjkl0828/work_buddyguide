@@ -13,7 +13,7 @@ withDefaults(
   <figure class="wb-group-qr" :class="{ 'is-screen-menu': screenMenu }">
     <div class="wb-group-qr__frame">
       <img
-        src="/contact/wechat-owner.jpg"
+        src="/contact/wechat-owner.png"
         alt="站长微信二维码"
         loading="lazy"
       />
