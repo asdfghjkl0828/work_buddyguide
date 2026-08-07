@@ -119,6 +119,13 @@ button {
   letter-spacing: -0.03em;
 }
 
+.VPNavBarTitle .title::before {
+  width: 0;
+  height: 0;
+  flex: 0 0 auto;
+  content: "";
+}
+
 .VPNavBarMenuLink,
 .VPNavBarMenuGroup .text {
   font-size: 15px;
