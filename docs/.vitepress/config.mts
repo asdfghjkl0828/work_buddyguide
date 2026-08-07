@@ -59,7 +59,7 @@ export default defineConfig({
     },
     themeConfig: {
       siteTitle: "WorkBuddy × ZLSK",
-      logo: "/contact/logo-ZLSK.png",
+      logo: "/contact/logo-zlsk.png",
       nav: [
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },
