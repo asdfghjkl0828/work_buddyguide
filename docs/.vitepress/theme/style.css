@@ -730,8 +730,13 @@ button {
 
 .VPSidebarItem.is-active > .item .link {
   position: relative;
-  color: #11130e !important;
-  background: var(--wb-acid);
+  background: rgba(68, 136, 238, 0.18);
+  color: var(--vb-accent-text, #4488ee) !important;
+  font-weight: 700;
+}
+.dark .VPSidebarItem.is-active > .item .link {
+  color: #a8c8ff !important;
+  background: rgba(68, 136, 238, 0.22);
 }
 
 .VPSidebarItem.is-active > .item .link::before {
