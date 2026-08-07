@@ -27,7 +27,7 @@ withDefaults(
 
 <style scoped>
 .wb-group-qr {
-  width: 300px;
+  width: 320px;
   margin: 0;
   color: var(--wb-ink);
 }
