@@ -29,9 +29,9 @@ const renderDiagram = async () => {
       themeVariables: dark
         ? undefined
         : {
-            primaryColor: "#eef6d1",
+            primaryColor: "#d8e6ff",
             primaryTextColor: "#12140f",
-            primaryBorderColor: "#355e18",
+            primaryBorderColor: "#1a4488",
             lineColor: "#62675e",
             secondaryColor: "#f5f7f0",
             tertiaryColor: "#ffffff",
