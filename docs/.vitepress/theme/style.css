@@ -887,8 +887,13 @@ button {
   border-radius: 4px;
 }
 
-.vp-doc .custom-block.tip {
+.vp-doc .custom-block.tip,
+.vp-doc .custom-block.warning,
+.vp-doc .custom-block.info,
+.vp-doc .custom-block.note,
+.vp-doc .custom-block.danger {
   border-left: 5px solid var(--vp-custom-block-tip-border);
+  background: var(--vp-custom-block-tip-bg);
 }
 
 .vp-doc div[class*="language-"] {
@@ -1391,8 +1396,8 @@ body.wb-lightbox-open {
 
 /* navbar logo */
 .VPNavBarTitle .VPImage.logo {
-  height: 64px !important;
-  width: 64px !important;
+  height: 44px !important;
+  width: 44px !important;
   border-radius: 0 !important;
   mix-blend-mode: multiply;
   position: relative !important;
@@ -1401,6 +1406,9 @@ body.wb-lightbox-open {
 .dark .VPNavBarTitle .VPImage.logo,
 html.dark .VPNavBarTitle .VPImage.logo {
   mix-blend-mode: screen;
+}
+.VPNavBarTitle .title {
+  white-space: nowrap;
 }
 .dark .VPNavBarTitle .VPImage.logo,
 html.dark .VPNavBarTitle .VPImage.logo {
