@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>WorkBuddy 实战蓝皮书</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080808;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;line-height:1.6}
+.zoom-in{opacity:0;transform:scale(0.85);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);will-change:transform,opacity}
+.zoom-in.show{opacity:1;transform:scale(1)}
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(8,8,8,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,234,0,.15);padding:0 28px}
+.nav__inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav__logo{font-size:1rem;font-weight:800;color:#ffea00;text-shadow:0 0 10px rgba(255,234,0,.3)}
+.nav__links{display:flex;gap:24px;align-items:center}
+.nav__links a{font-size:.85rem;color:rgba(255,255,255,.6);transition:all .2s;padding:6px 0;position:relative}
+.nav__links a:hover{color:#ffea00;text-shadow:0 0 8px rgba(255,234,0,.3)}
+.nav__links a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:1px;background:#ffea00;transition:width .2s}
+.nav__links a:hover::after{width:100%}
+.nav__btn{font-size:.82rem;font-weight:700;color:#080808;background:#ffea00;padding:6px 16px;clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px);transition:all .2s}
+.nav__btn:hover{box-shadow:0 0 14px rgba(255,234,0,.4)}
+@media(max-width:768px){.nav__links{gap:14px}.nav__links a{font-size:.78rem}}
+body::after{content:"";position:fixed;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.04) 2px,rgba(0,0,0,.04) 4px);pointer-events:none;z-index:9999}
+a{text-decoration:none;color:inherit}
+.hero{padding:156px 32px 80px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#1a1a0a 0%,#080808 70%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(255,234,0,.04) 0%,transparent 60%);pointer-events:none}
+.hero__inner{max-width:640px;margin:0 auto;position:relative;z-index:1}
+.hero__title{font-size:clamp(2.2rem,7vw,4rem);font-weight:900;color:#ffea00;text-shadow:0 0 30px rgba(255,234,0,.4),0 0 60px rgba(255,234,0,.1);letter-spacing:-1px;margin:0 0 18px;text-transform:uppercase}
+.hero__sub{font-size:1.05rem;color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 36px;line-height:1.7}
+.hero__btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;padding:14px 36px;font-size:1rem;font-weight:700;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);text-decoration:none;transition:all .2s;cursor:pointer}
+.btn--fill{background:#ffea00;color:#080808}
+.btn--fill:hover{box-shadow:0 0 24px rgba(255,234,0,.5),0 0 48px rgba(255,234,0,.2);transform:translateY(-2px)}
+.btn--ghost{background:transparent;color:#00ffff;border:1px solid #00ffff}
+.btn--ghost:hover{background:rgba(0,255,255,.08);box-shadow:0 0 16px rgba(0,255,255,.2)}
+.sec{max-width:1100px;margin:0 auto;padding:60px 28px}
+.sec__head{text-align:center;margin-bottom:40px}
+.sec__title{font-size:2rem;font-weight:800;color:#ffea00;text-shadow:0 0 16px rgba(255,234,0,.2);margin:0 0 8px}
+.sec__sub{font-size:.9rem;color:rgba(255,255,255,.45)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{display:flex;flex-direction:column;gap:12px;padding:32px 26px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);transition:all .2s}
+.card:hover{background:rgba(255,234,0,.06);border-color:rgba(255,234,0,.3);transform:translateY(-3px);box-shadow:0 6px 24px rgba(255,234,0,.08)}
+.card__icon{font-size:2.2rem;line-height:1}
+.card__tt{font-size:1.1rem;font-weight:700;color:#fff}
+.card__st{font-size:.85rem;color:rgba(255,255,255,.4);line-height:1.4}
+.path{display:flex;flex-direction:column;gap:10px;padding:30px 24px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px);transition:all .2s;position:relative;overflow:hidden}
+.path:hover{background:rgba(0,255,255,.05);border-color:rgba(0,255,255,.25)}
+.path__ch{font-size:.72rem;color:#00ffff;letter-spacing:2px;font-weight:700}
+.path__dur{position:absolute;top:14px;right:14px;font-size:.72rem;color:rgba(255,255,255,.35);background:rgba(255,255,255,.05);padding:4px 10px;clip-path:polygon(2px 0,100% 0,100% calc(100% - 2px),calc(100% - 2px) 100%,0 100%,0 2px)}
+.path strong{font-size:1.1rem;color:#fff;font-weight:700}
+.path span{font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.5}
+.step{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:38px 22px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px);transition:all .2s}
+.step:hover{border-color:rgba(255,234,0,.3)}
+.step__n{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#ffea00,#ff8c00);color:#080808;font-size:1rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step strong{font-size:1.05rem;color:#fff;font-weight:700}
+.step span{font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.5}
+.ft{text-align:center;padding:48px 28px;color:rgba(255,255,255,.2);font-size:.82rem;border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:768px){.grid3,.grid4{grid-template-columns:repeat(2,1fr)}.hero{padding:80px 20px 60px}.sec{padding:48px 20px}}
+@media(max-width:480px){.grid3,.grid4{grid-template-columns:1fr}}
+html{scroll-behavior:smooth}
+</style></head><body>
+<nav class="nav"><div class="nav__inner">
+<div class="nav__logo">WorkBuddy 蓝皮书</div>
+<div class="nav__links">
+<a href="#hero">首页</a>
+<a href="#path">学习路径</a>
+<a href="#scene">应用场景</a>
+<a href="#workflow">工作流</a>
+<a class="nav__btn" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/">开始阅读</a>
+</div>
+</div></nav>
+<section class="hero" id="hero"><div class="hero__inner">
+<h1 class="hero__title">WorkBuddy 实战蓝皮书</h1>
+<p class="hero__sub">一套以真实工作为主线的 WorkBuddy 实践路径。从 0 到 1 先用起来，再把每次成功沉淀为可复用的工作系统。</p>
+<div class="hero__btns">
+<a class="btn btn--fill" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/">开始阅读</a>
+<a class="btn btn--ghost" href="https://asdfghjkl0828.github.io/work_buddyguide/reading-guide">阅读路线</a>
+</div></div></section>
+<section class="sec" id="path"><div class="sec__head"><h2 class="sec__title zoom-in">学习路径</h2><p class="sec__sub zoom-in">循序渐进，从入门到精通</p></div><div class="grid4">
+<a class="path zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%80%E7%AF%87%20%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%EF%BC%9A%E5%85%88%E6%8A%8A%20WorkBuddy%20%E7%94%A8%E8%B5%B7%E6%9D%A5/"><span class="path__ch">PART 01</span><span class="path__dur">10 章</span><strong>基础入门</strong><span>安装、界面、第一个任务、Skill、连接器</span></a>
+<a class="path zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/"><span class="path__ch">PART 02</span><span class="path__dur">11 章</span><strong>真实案例</strong><span>办公、文件、远程、资讯、投资、内容</span></a>
+<a class="path zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%B8%89%E7%AF%87%20%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%9A%E6%8A%8A%E6%A1%88%E4%BE%8B%E5%8F%98%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="path__ch">PART 03</span><span class="path__dur">4 章</span><strong>进阶系统</strong><span>打造 Skill、多 Agent 设计、自动化</span></a>
+<a class="path zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E5%9B%9B%E7%AF%87%20%E5%B2%97%E4%BD%8D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E8%90%BD%E5%9C%B0/"><span class="path__ch">PART 04</span><span class="path__dur">2 章</span><strong>团队落地</strong><span>岗位路线、行业方案、组建 AI 团队</span></a>
+</div></section>
+<section class="sec" id="scene"><div class="sec__head"><h2 class="sec__title zoom-in">应用场景</h2><p class="sec__sub zoom-in">不必从头读，带着问题进来，先跑通一个能验收的结果。</p></div><div class="grid3">
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2011%20%E7%AB%A0%20%E5%8A%9E%E5%85%AC%E4%B8%89%E4%BB%B6%E5%A5%97%EF%BC%9AWord%E3%80%81Excel%E3%80%81PPT/"><div class="card__icon">📄</div><div class="card__tt">AI 辅助办公</div><div class="card__st">智能处理 Word · Excel · PPT</div></a>
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2012%20%E7%AB%A0%20%E4%BB%8E%E6%95%B4%E7%90%86%E6%A1%8C%E9%9D%A2%E6%96%87%E4%BB%B6%E8%BF%99%E4%BA%9B%E5%B0%8F%E4%BA%8B%E5%81%9A%E8%B5%B7/"><div class="card__icon">📁</div><div class="card__tt">文件与远程</div><div class="card__st">桌面整理 · 远程控制</div></a>
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2015%20%E7%AB%A0%20%E8%B5%84%E8%AE%AF%E6%95%B4%E5%90%88%EF%BC%9A%E6%8A%8A%E4%BF%A1%E6%81%AF%E6%B5%81%E5%8F%98%E6%88%90%E6%AF%8F%E6%97%A5%E9%80%9A%E7%9F%A5/"><div class="card__icon">📰</div><div class="card__tt">资讯整合</div><div class="card__st">信息收集 · 筛选 · 每日通知</div></a>
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2018%20%E7%AB%A0%20%E6%8A%8A%E6%8A%95%E8%B5%84%E5%88%86%E6%9E%90%E5%8F%98%E6%88%90%E4%BD%A0%E7%9A%84%E6%97%A5%E5%B8%B8/"><div class="card__icon">📊</div><div class="card__tt">专业分析</div><div class="card__st">投资研究 · 数据诊断</div></a>
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2019%20%E7%AB%A0%20%E4%B8%80%E5%8F%A5%E8%AF%9D%E5%8F%AC%E5%94%A4%20AI%20%E8%A7%86%E9%A2%91%E5%9B%A2%E9%98%9F/"><div class="card__icon">🎬</div><div class="card__tt">内容创作</div><div class="card__st">视频生成 · 自媒体</div></a>
+<a class="card zoom-in" href="https://asdfghjkl0828.github.io/work_buddyguide/bluebook/%E7%AC%AC%E4%BA%8C%E7%AF%87%20%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%9A%E4%BB%8E%E4%B8%80%E9%A1%B9%E4%BB%BB%E5%8A%A1%E5%88%B0%E4%B8%80%E6%94%AF%20AI%20%E5%9B%A2%E9%98%9F/%E7%AC%AC%2024%20%E7%AB%A0%20%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%A4%9A%20Agent%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"><div class="card__icon">🤖</div><div class="card__tt">AI 工作系统</div><div class="card__st">Skill · Agent · 自动化</div></a>
+</div></section>
+<section class="sec" id="workflow"><div class="sec__head"><h2 class="sec__title zoom-in">工作流四步法</h2><p class="sec__sub zoom-in">从需求到优化的完整闭环</p></div><div class="grid4">
+<div class="step zoom-in"><div class="step__n">01</div><strong>分析需求</strong><span>深入理解业务目标与痛点</span></div>
+<div class="step zoom-in"><div class="step__n">02</div><strong>设计流程</strong><span>构建清晰高效的工作流架构</span></div>
+<div class="step zoom-in"><div class="step__n">03</div><strong>实施部署</strong><span>快速落地并上线运行</span></div>
+<div class="step zoom-in"><div class="step__n">04</div><strong>优化迭代</strong><span>持续监控与性能调优</span></div>
+</div></section>
+<footer class="ft"><p>WorkBuddy 实战蓝皮书 · 27 章 · 开源 · 2026</p></footer>
+<script>
+const zo=new IntersectionObserver((e)=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('show');else en.target.classList.remove('show')})},{threshold:.08});
+document.querySelectorAll('.zoom-in').forEach(el=>zo.observe(el));
+</script>
+</body></html>
